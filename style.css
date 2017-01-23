@@ -1,0 +1,254 @@
+/*
+Theme Name: P-theme
+Theme URI: https://github.com/rhonaldomaster/ptheme
+Description: Mi primer tema de WP.
+Author: rhonaldomaster
+Author URI: https://github.com/rhonaldomaster
+Version: 0.1
+*/
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+* {
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+}
+
+body {
+  background-color: #FCFCFC;
+  font-family: 'Lato','Helvetica Neue',Helvetica,sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: #DD5728;
+  text-decoration: none;
+  transition: 0.5s ease all;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  padding: 0 1rem;
+}
+
+.screen-reader-text {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/* header */
+.main-banner {
+  background-image: url(images/main-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 10px;
+}
+
+.main-title a {
+  color: #FFFFFF;
+}
+
+/* menu */
+.menu {
+  border: 1px solid #DD5728;
+  border-radius: 4px;
+  list-style-type: none;
+  margin: 0;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+  padding: 10px;
+}
+
+.menu li a:hover {
+  color: #FFFFFF;
+  background-color: #DD5728;
+  text-decoration: none;
+}
+
+/* main */
+.main-container {
+  overflow: auto;
+  padding: 10px 0;
+}
+
+.main-post {
+  margin-bottom: 15px;
+}
+
+.post-title{
+  border: 1px solid #DD5728;
+  border-radius: 4px 4px 0 0;
+  margin-bottom: 0;
+  padding: 2px 10px;
+}
+
+.post-excerpt {
+  background-color: #FAFAFA;
+  border: 1px solid #EAEAEA;
+  border-radius: 0 0 4px 4px;
+  padding: 15px;
+}
+
+/* tags */
+.tags a {
+  background-color: #FFFFFF;
+  border: 1px solid #DD5728;
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+
+.tags a:hover {
+  color: #FFFFFF;
+  background-color: #DD5728;
+  text-decoration: none;
+}
+
+.tags a:after {
+  content: '\e935';
+  font-family: 'icomoon';
+  margin-left: 5px;
+}
+.attachment-post-thumbnail{
+  height: auto;
+  width: auto;
+}
+
+/* sidebar */
+.sidebar h3{
+  border-radius: 4px;
+  border: 1px solid #DD5728;
+  color: #DD5728;
+  padding: 2px 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .sidebar{
+    display: none;
+  }
+}
+
+/* Comentarios */
+.commentlist {
+  padding: 0;
+}
+
+.commentlist li {
+  list-style: none !important;
+}
+
+.comment-body {
+  padding: 15px;
+}
+
+.comment-author {
+  border-left:3px solid #FBC356;
+  margin-top: 5px;
+}
+
+.reply, .commentmetadata {
+  font-size: 0.9em;
+}
+
+.depth-1, .depth-2, .depth-3, .depth-4 {
+  border: 1px solid #EAEAEA;
+  border-radius: 4px;
+}
+
+.depth-1, .depth-3 {
+  background-color: #FAFAFA;
+}
+
+.depth-2, .depth-4 {
+  background-color: #FFF;
+}
+
+.depth-1 {
+  margin: 20px 0;
+}
+
+.comment-respond {
+  background-color: #FAFAFA;
+  border: 1px solid #EAEAEA;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+/* Respuesta a comentarios*/
+.depth-2 {
+  margin:2% 5% !important;
+}
+
+.depth-3 {
+  margin: 2% 7% !important;
+}
+
+.depth-4 {
+  margin:2% 5% 4% 10% !important;
+}
+
+.comment-form label {
+  display: block;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+textarea, input {
+  border: 1px solid #EAEAEA;
+  border-radius: 4px;
+  max-width: 100%;
+  outline: none;
+  padding: 7px;
+  transition: 0.5s ease all;
+}
+
+textarea:focus, input:focus {
+  border: 1px solid #DD5728;
+}
+
+input[type=submit] {
+  background-color: #FFFFFF;
+  border: 1px solid #DD5728;
+  border-radius: 4px;
+  color: #DD5728;
+  transition: 0.5s ease all;
+}
+
+input[type=submit]:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+  background-color: #DD5728;
+}
+
+/* footer */
+.main-footer {
+  border: 1px solid #EAEAEA;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0 0 4px 4px;
+  clear: both;
+  margin-top: -10px;
+  padding: 10px 0;
+  position: relative;
+  text-align: center;
+}
